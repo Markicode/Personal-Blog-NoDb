@@ -127,3 +127,31 @@ p {
     padding: 0;
     white-space: pre-line;
 }
+
+@media (max-width: 750px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #nav {
+        flex-direction: row;
+        width: 100vw
+    }
+
+    #header {
+        font-size: 20px;
+    }
+
+    .blog-container {
+        margin: 2rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    .textbox {
+        width: calc(100vw - 3rem);
+    }
+}
+
