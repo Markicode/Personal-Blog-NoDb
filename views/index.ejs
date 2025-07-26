@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs"); %>
+
+
+    <% for(let i=0; i < allBlogs.length; i++) { %>
+        <div class="blog-container">
+            <div class="blog-date">
+                <div class="date">
+                    <%= allBlogs[i].date %>
+                </div>
+                <div class="blog-anchors">
+                    <a href="/edit?id=<%=i%>">Edit</a>
+                    <a href="/delete?id=<%=i%>">Delete</a>
+                </div>
+            </div>
+            <div class="blog-title">
+                <%= allBlogs[i].title %>
+            </div>
+            <div class="blog-content">
+                <p><%= allBlogs[i].content %></p>
+            </div>
+        </div>
+
+
+
+
+        <% } %>
+
+
+
+
+            <%- include("partials/footer.ejs"); %>

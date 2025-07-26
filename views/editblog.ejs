@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs"); %>
+
+    <form action="/submitblogedit" method="post">
+        <label for="title">Title:</label><br>
+        <input type="text" class="textbox" name="title" value="<%= blog.title %>"><br>
+        <label for="content">Blog content:</label><br>
+        <textarea class="textbox" id="textarea" name="content"><%= blog.content %></textarea><br>
+        <input type="hidden" name="index" value="<%= index %>">
+        <input type="submit" value="Submit" id="submit-button">
+    </form>
+
+
+    <%- include("partials/footer.ejs"); %>

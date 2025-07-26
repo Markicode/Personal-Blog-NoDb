@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    color: #727D73;
+}
+
+h1 {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F0F0D7;
+}
+
+#header {
+    height: 100px;
+    font-size: 2rem;
+    font-family: "Cabin Sketch", sans-serif;
+}
+
+#main {
+    height: calc(100% - 175px);  
+    display: flex;
+    align-items: stretch;
+    flex: 1;
+}
+
+#nav {
+    font-family: "Cabin Sketch", sans-serif;
+    width: 20%;
+    max-width: 225px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.nav-item a:hover {
+    color: #AAB99A
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-family: "Noto Sans", sans-serif;
+    overflow: auto;
+    flex: 1;
+}
+
+#footer {
+    height: 75px;
+    font-family: "Noto Sans", sans-serif;
+    padding-left: 3rem;
+}
+
+.blog-container {
+    margin: 1.5rem 3rem 1.5rem 0;
+}
+
+.blog-date {
+    border: 2px solid #727D73;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.blog-title {
+    font-weight: bold;
+    border-left: 2px solid #727D73;
+    border-right: 2px solid #727D73;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.blog-content {
+    color: black;
+    border: 2px solid #727D73;
+    padding: 1rem;
+    
+}
+
+.blog-anchors {
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: larger;
+}
+
+.blog-anchors a{
+    padding: 10px;
+}
+
+.blog-anchors a:hover {
+    color: #AAB99A
+}
+
+#submit-button {
+    margin: 10px;
+    background-color: #AAB99A;
+}
+
+.textbox {
+    width: calc(100vw - 20% - 100px);
+}
+
+#textarea {
+    height: 300px;
+    resize: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    white-space: pre-line;
+}
